@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number to fibonacci series");
+        int x=sc.nextInt();
+
+        int first=0;
+        int second=1;
+       if(x==0){
+        System.out.print(first+" ");
+       }
+       else{
+            for(int i=1;i<=x;i++){
+                System.out.print(first+" ");
+
+                int next=first+second;
+                first=second;
+                second=next;
+            }
+       }
+       sc.close();      
+
+    }
+}
