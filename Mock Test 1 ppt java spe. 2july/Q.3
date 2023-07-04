@@ -1,0 +1,18 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        int[] list={1,2,3,5,2};
+
+        int sum=0;
+        int i=0;
+        do{
+            sum+=list[i];
+            i++;
+        }while(i<list.length);
+
+        float average=(float)sum/2;
+        System.out.println(sum);
+        System.out.println("Average of list of numbers is "+average);
+    
+
+    }
+}
